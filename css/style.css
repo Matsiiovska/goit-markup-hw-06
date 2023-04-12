@@ -244,6 +244,9 @@ color:var(--contact-color);
 .futerblok{
     max-width: 264px;
 }
+.futerblk{
+    margin-left: auto;
+}
 /*-----------------/HERO----------------------------*/
 
 /*-----------------COMPONENTS----------------------------*/
@@ -289,8 +292,14 @@ color:var(--contact-color);
 }
 .social-listfut{
     display: flex;
-        gap: 120px;
 }
+.truadiv{
+    margin-left: auto;
+}
+.ondiv{
+    margin-right: 120px;
+}
+
 
 .social-list-link {
     display: flex;
@@ -506,7 +515,6 @@ pointer-events: none;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 408px;
-    height: 576px;
     background-color: var(--modal);
     padding: 72px 24px 24px 24px;
 }
@@ -582,6 +590,7 @@ background-color: var(--accent-color);
 }
 .modal-fut-input:focus{
     outline: none;
+    color: var(--modal);
 }
 .modal-fut-input-wrapper{
 display: flex;
@@ -593,28 +602,34 @@ position: relative;
     height: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    border: none;
+    border: transparent;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--button-font-color);
     background-color: var(--color-different-style);
     border-radius: 4px;
-    padding: 8px 64px 8px 24px;
-    /*transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    padding: 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.posic{
+.modal-fut-submit:hover,
+.modal-fut-submit:focus{
+    background-color: var(--accent-color);
+}
+/*.posic{
     position: relative;
-}
+}*/
 .modal-fut-input-icon {
-    position: absolute;
-    top: 50%;
-    right: 24px;
-    transform: translate(0, -50%);
+fill: currentColor;
+margin-left: 16px;
 
 }
 .modal-form-field{
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 .modal-form-input{
     width: 100%;
@@ -728,8 +743,11 @@ border-color: rgba(77, 90, 229, 1);
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        padding-bottom: 16px;
+        margin-bottom: 16px;
         text-align: center;
+}
+.privpos{
+    color: var(--color-different-style);
 }
 
 /*-----------------/modal-form----------------------------*/
